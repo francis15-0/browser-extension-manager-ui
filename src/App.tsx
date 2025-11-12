@@ -9,7 +9,10 @@ function App() {
     <>
 
     <Theme.Provider value={{isDark, setisDark}}>
-      <Header/>
+      <div className='background'>
+        <Header/>
+      </div>
+      
     </Theme.Provider>
     </>
   )

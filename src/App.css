@@ -1,0 +1,45 @@
+:root{
+--Neutral900: hsl(227, 75%, 14%);
+--Neutral800: hsl(226, 25%, 17%);
+--Neutral700: hsl(225, 23%, 24%);
+ --Neutral600: hsl(226, 11%, 37%);
+--Neutral300: hsl(0, 0%, 78%);
+--Neutral200: hsl(217, 61%, 90%);
+ --Neutral100: hsl(0, 0%, 93%);
+--Neutral0: hsl(200, 60%, 99%);
+
+ --Red400: hsl(3, 86%, 64%);
+--Red500: hsl(3, 71%, 56%);
+--Red700: hsl(3, 77%, 44%);
+
+}
+
+*{
+    margin: 0;
+}
+.background{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Neutral900);
+}
+
+.header{
+    width: 80%;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    margin-top: 1em;
+    border-radius: 0.5em;
+}
+
+.light{
+background-color: var(--Neutral800);
+}
+.dark{
+background-color: var(--Neutral300);
+}

@@ -15,7 +15,7 @@ export default function Header():JSX.Element{
     console.log(isDark)
     return(
         <>
-        <div>
+        <div className={isDark ? "header dark" : "header light"}>
             <div>
                 Extention
             </div>
