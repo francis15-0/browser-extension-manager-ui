@@ -1,6 +1,7 @@
 import type { JSX } from "react";
 import { useContext } from "react";
 import { Theme } from "./userContext";
+import '../App.css'
 export default function Header():JSX.Element{
 
     const context = useContext(Theme)
@@ -16,8 +17,9 @@ export default function Header():JSX.Element{
     return(
         <>
         <div className={isDark ? "header dark" : "header light"}>
-            <div>
-                Extention
+            <div className="flex-left">
+                <img src="../assets/images/logo.svg" alt="" />
+                
             </div>
 
             <div className="button">

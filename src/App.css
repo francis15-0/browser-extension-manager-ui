@@ -38,8 +38,32 @@
 }
 
 .light{
-background-color: var(--Neutral800);
+background-color: var(--Neutral0);
 }
 .dark{
 background-color: var(--Neutral300);
+}
+
+.flex-left{
+    margin-left: 1em;
+}
+.flex-left img{
+    width: 7rem;
+}
+
+.button{
+    width: 1.8em;
+    height: 2em;
+    background-color: var(--Neutral300);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.4em;
+    margin-right: 1em;
+}
+
+.button img{
+    width: 1em;
+
 }
