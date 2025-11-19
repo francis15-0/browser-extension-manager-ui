@@ -18,3 +18,16 @@
     justify-content:  space-between;
     margin-top: 3em;
 }
+
+.all{
+    background-color: blueviolet;
+}
+
+.active{
+    background-color: aqua;
+
+}
+
+.inactive{
+    background-color: darkblue;
+}

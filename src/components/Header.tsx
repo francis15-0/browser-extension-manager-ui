@@ -13,7 +13,6 @@ export default function Header():JSX.Element | null{
         setisDark(!isDark)
     }
 
-    console.log(isDark)
     return(
         <>
         <div className={isDark ? "header dark" : "header light"}>
