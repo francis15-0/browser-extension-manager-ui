@@ -15,13 +15,13 @@ export default function Button_bar():JSX.Element | null{
         <div className="Extension-bar">
 
             <div>
-                Extensions List
+                <p>Extensions List</p>
             </div>
 
             <div className="button-flex">
                 <button className={states === "all"? "all": ""} onClick={()=>setStates("all")}>All</button>
-                <button className={states === "active"? "active": ""} onClick={()=>setStates("active")}>Active</button>
-                <button className={states === "inactive"? "inactive": ""} onClick={()=>setStates("inactive")}>Inactive</button>
+                <button className={states === "active"? "all": ""} onClick={()=>setStates("active")}>Active</button>
+                <button className={states === "inactive"? "all": ""} onClick={()=>setStates("inactive")}>Inactive</button>
                 
             </div>
         </div>

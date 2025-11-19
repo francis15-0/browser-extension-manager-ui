@@ -1,6 +1,22 @@
+:root{
+--Neutral900: hsl(227, 75%, 14%);
+--Neutral800: hsl(226, 25%, 17%);
+--Neutral700: hsl(225, 23%, 24%);
+ --Neutral600: hsl(226, 11%, 37%);
+--Neutral300: hsl(0, 0%, 78%);
+--Neutral200: hsl(217, 61%, 90%);
+ --Neutral100: hsl(0, 0%, 93%);
+--Neutral0: hsl(200, 60%, 99%);
+
+ --Red400: hsl(3, 86%, 64%);
+--Red500: hsl(3, 71%, 56%);
+--Red700: hsl(3, 77%, 44%);
+
+}
+
 .button-flex{
     box-sizing: border-box;
-    width: 10rem;
+    width: 11rem;
     display: flex;
     justify-content: space-between;
     
@@ -16,18 +32,18 @@
     width: 80%;
     display: flex;
     justify-content:  space-between;
+    align-items: center;
     margin-top: 3em;
 }
 
 .all{
-    background-color: blueviolet;
+    background-color: var(--Red500);
 }
 
-.active{
-    background-color: aqua;
-
+p{
+    font-size: 2em;
 }
 
-.inactive{
-    background-color: darkblue;
+button:nth-of-type(1){
+    width: 3.1em;
 }
