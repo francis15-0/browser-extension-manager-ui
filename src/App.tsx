@@ -3,10 +3,14 @@ import './App.css'
 import { Theme } from './components/userContext'
 import Header from './components/Header'
 import Button_bar from './components/Button_bar'
+import type { dataProps } from './types/data'
+import data from "../data.json"
 function App() {
   
   const [isDark, setisDark] = useState<boolean>(false)
   const [states, setStates] = useState<"active" | "all" | "inactive">("all")
+  const [extension, setExtension] = useState<dataProps[]>(data)
+  console.log(extension)
   return (
     <>
 
