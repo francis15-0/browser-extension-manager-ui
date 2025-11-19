@@ -1,0 +1,20 @@
+.button-flex{
+    box-sizing: border-box;
+    width: 10rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.button-flex button{
+    height: 1.5rem;
+    border-radius: 1em;
+    border: 1px solid grey;
+}
+
+.Extension-bar{
+    width: 80%;
+    display: flex;
+    justify-content:  space-between;
+    margin-top: 3em;
+}

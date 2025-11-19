@@ -2,7 +2,7 @@ import type { JSX } from "react";
 import { useContext } from "react";
 import { Theme } from "./userContext";
 import '../App.css'
-export default function Header():JSX.Element{
+export default function Header():JSX.Element | null{
 
     const context = useContext(Theme)
     if (!context) return null;
@@ -22,10 +22,10 @@ export default function Header():JSX.Element{
                 
             </div>
 
-            <div className="button">
+            <div onClick={handleToggle} className="button">
 
                 {
-                    isDark ? <img onClick={handleToggle} src="../assets/images/icon-sun.svg" alt="" />: <img onClick={handleToggle} src="../assets/images/icon-moon.svg" alt="" />
+                    isDark ? <img src="../assets/images/icon-sun.svg" alt="" />: <img onClick={handleToggle} src="../assets/images/icon-moon.svg" alt="" />
                 }
                 
             </div>
