@@ -17,7 +17,7 @@ function App() {
   return (
     <>
 
-    <Theme.Provider value={{isDark, setisDark, states, setStates}}>
+    <Theme.Provider value={{isDark, setisDark, states, setStates, setExtension}}>
       <div className={isDark ? "background b-dark" : "background b-light"}>
         <Header/>
         <Button_bar/>

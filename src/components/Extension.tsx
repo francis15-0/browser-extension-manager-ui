@@ -1,9 +1,28 @@
-import type { JSX } from "react";
+import { useContext, type JSX } from "react";
 import Switch from '@mui/material/Switch';
 import type { dataProps } from "../types/data";
 import '../styles/extension.css'
+import { Theme } from "./userContext";
+
 
 export default function Extention({data}:{data : dataProps}):JSX.Element | null{
+   const context = useContext(Theme)
+    if (!context) return null;
+
+    const {setExtension} = context
+
+    const handleCheck = () =>{
+        setExtension((prev) => prev.map((item) =>
+        item.name === data.name
+          ? { ...item, isActive: !item.isActive } // toggle this one
+          : item                                  // keep others the same
+      )
+    );
+    }
+
+    const handleDelete = ()=>{
+        setExtension((prev)=> prev.filter((value)=> value.name != data.name))
+    }
     return(
         <>
             <div className="extension">
@@ -19,11 +38,11 @@ export default function Extention({data}:{data : dataProps}):JSX.Element | null{
                     </div>
 
                     <div className="bottom-flex">
-                        <div className="remove">
+                        <div onClick={handleDelete} className="remove">
                             Remove
                         </div>
 
-                        <Switch checked={data.isActive}  size="small"/>
+                        <Switch onChange={handleCheck} checked={data.isActive}  size="small"/>
                         
 
                     </div>
