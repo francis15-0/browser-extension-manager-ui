@@ -6,3 +6,15 @@
     margin-top: 2em;
     margin-bottom: 2em;
 }
+
+
+/* ============================
+   MOBILE CSS TEMPLATE
+   ============================ */
+@media (max-width: 600px) {
+    /* Mobile styles below */
+
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}

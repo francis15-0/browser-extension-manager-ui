@@ -1,6 +1,9 @@
 import type { JSX } from "react";
 import { useContext } from "react";
 import { Theme } from "./userContext";
+import logo from '../assets/images/logo.svg'
+import moon from '../assets/images/icon-moon.svg'
+import sun from '../assets/images/icon-sun.svg'
 import '../App.css'
 export default function Header():JSX.Element | null{
 
@@ -17,14 +20,14 @@ export default function Header():JSX.Element | null{
         <>
         <div className={isDark ? "header dark" : "header light"}>
             <div className="flex-left">
-                <img src="../assets/images/logo.svg" alt="" />
+                <img src={logo} alt="" />
                 
             </div>
 
             <div onClick={handleToggle} className="button">
 
                 {
-                    isDark ? <img src="../assets/images/icon-sun.svg" alt="" />: <img onClick={handleToggle} src="../assets/images/icon-moon.svg" alt="" />
+                    isDark ? <img src={sun} alt="" />: <img onClick={handleToggle} src={moon} alt="" />
                 }
                 
             </div>

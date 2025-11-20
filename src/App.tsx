@@ -4,8 +4,7 @@ import { Theme } from './components/userContext'
 import Header from './components/Header'
 import Button_bar from './components/Button_bar'
 import type { dataProps } from './types/data'
-import data from "../data.json"
-import Extention from './components/Extension'
+import {data} from "../src/data"
 import Extension_grid from './components/Extention_grid'
 
 function App() {

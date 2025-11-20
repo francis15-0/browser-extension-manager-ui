@@ -75,3 +75,18 @@ background-color: var(--Neutral300);
     width: 1em;
 
 }
+
+/* ============================
+   MOBILE CSS TEMPLATE
+   ============================ */
+@media (max-width: 600px) {
+    /* Mobile styles below */
+
+    .header{
+        width: 80%;
+    }
+
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}
