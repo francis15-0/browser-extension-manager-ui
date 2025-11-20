@@ -39,6 +39,7 @@
 
 .light{
 background-color: var(--Neutral0);
+color: white;
 }
 
 .b-light{
@@ -46,10 +47,17 @@ background-color: var(--Neutral0);
 }
 
 .b-dark{
-    background-color: var(--Neutral700);
+    background-color: var(--Neutral900);
 }
 .dark{
-background-color: var(--Neutral300);
+background-color: var(--Neutral800);
+}
+
+.icon-dark{
+    background-color: var(--Neutral700);
+}
+.icon-light{
+    background-color: var(--Neutral200);
 }
 
 .flex-left{
@@ -62,7 +70,6 @@ background-color: var(--Neutral300);
 .button{
     width: 1.8em;
     height: 1.8em;
-    background-color: var(--Neutral300);
     
     display: flex;
     justify-content: center;

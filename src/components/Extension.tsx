@@ -9,7 +9,7 @@ export default function Extention({data}:{data : dataProps}):JSX.Element | null{
    const context = useContext(Theme)
     if (!context) return null;
 
-    const {setExtension} = context
+    const {isDark, setExtension} = context
 
     const handleCheck = () =>{
         setExtension((prev) => prev.map((item) =>
@@ -25,7 +25,7 @@ export default function Extention({data}:{data : dataProps}):JSX.Element | null{
     }
     return(
         <>
-            <div className="extension">
+            <div className={`extension ${isDark ? "ext-dark": "ext-light"}`}>
                 <div className="extension-flex">
                         <div className="top-flex">
                         <img className="extension-img" src={data.logo} alt="extension-img" />

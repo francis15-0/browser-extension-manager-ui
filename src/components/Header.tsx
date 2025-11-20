@@ -24,7 +24,7 @@ export default function Header():JSX.Element | null{
                 
             </div>
 
-            <div onClick={handleToggle} className="button">
+            <div onClick={handleToggle} className={`button  ${isDark? "icon-dark": "icon-light"} `}>
 
                 {
                     isDark ? <img src={sun} alt="" />: <img onClick={handleToggle} src={moon} alt="" />

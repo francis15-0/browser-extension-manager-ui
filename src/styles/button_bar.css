@@ -19,7 +19,7 @@
     width: 11rem;
     display: flex;
     justify-content: space-between;
-    
+    margin-right: 1em;
 }
 
 .button-flex button{
@@ -38,6 +38,14 @@
 
 .all{
     background-color: var(--Red500);
+}
+
+.bar-light{
+color: black;
+}
+
+.bar-dark{
+    color: white;
 }
 
 p{
