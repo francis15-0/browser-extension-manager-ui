@@ -1,0 +1,78 @@
+:root{
+--Neutral900: hsl(227, 75%, 14%);
+--Neutral800: hsl(226, 25%, 17%);
+--Neutral700: hsl(225, 23%, 24%);
+ --Neutral600: hsl(226, 11%, 37%);
+--Neutral300: hsl(0, 0%, 78%);
+--Neutral200: hsl(217, 61%, 90%);
+ --Neutral100: hsl(0, 0%, 93%);
+--Neutral0: hsl(200, 60%, 99%);
+
+ --Red400: hsl(3, 86%, 64%);
+--Red500: hsl(3, 71%, 56%);
+--Red700: hsl(3, 77%, 44%);
+
+}
+
+*{
+    box-sizing: border-box;
+}
+.extension{
+    width: 20em;
+    height: 10em;
+    background-color: white;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.extension-flex{
+    width: 18em;
+    height: 8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-flex{
+    display: flex;
+
+}
+.bottom-flex{
+    display: flex;
+    justify-content: space-between;
+    width: 18em;
+}
+
+.name{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0.2em;
+}
+
+.description{
+    font-size: 0.8em;
+}
+
+.extension-img{
+    width: 3em;
+    margin-right: 1em;
+}
+
+.remove{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5em;
+    border-radius: 1em;
+    border: 1px solid gray;
+    font-size: 0.8em;
+}
+
+.remove:hover{
+    background-color: var(--Red500);
+    color: white;
+    cursor: pointer;
+}
